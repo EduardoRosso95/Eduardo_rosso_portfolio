@@ -143,6 +143,42 @@ body {
 }
 
 
+
+@media only screen and (max-width: 768px) {
+      .digital-skills-row{        
+        display:flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        
+      }
+    }
+
+
+.digital-skills-row div{
+   
+    background-color: #262626;
+
+}
+
+.digital-skills-row img{
+   
+   height: 120px;
+   width: 120px;
+
+}
+
+.container-img-about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-md-fluid{
+    z-index: -1;
+}
+
+
+
 </style>
 
 
@@ -252,6 +288,9 @@ body {
     <div class="container-fluid" id="about-me">
         <div class="container my-5">
             <div class="row">
+
+                <!--History and skill digital comlumn -->
+
                 <div class="col-md-8">
                     <h1 class="about-me-title greenspan fw-semibold mb-3"><span class="bluespan">&lt;&gt;</span> ABOUT ME <span class="bluespan">&lt;&gt;</span></h1>
                     <h2 class="display-3 redspan fw-semibold"><span class="bluespan">&lt;</span>Hi there, i'm Eduardo Rosso!<span class="bluespan">&gt;</span></h2>
@@ -272,34 +311,67 @@ body {
                         <br>
                         <span class="bluespan">&#125;</span></p>
                     </article>
-                </div>
-                <div class="col-md-4">
+
+                    <!--Digital skills paragraph-->
+
+                    <h1 class=" greenspan fw-semibold my-4"><span class="bluespan">&lt;&gt;</span> DIGITAL SKILLS  <span class="bluespan">&lt;&gt;</span></h1>
+                                       
+                    <div class="row digital-skills-row text-center">
+                        <div class="col-md-4 py-5">
+                            <img src="./assets/icons/about-me-html-icon.png" class="img-fluid mb-4" alt="availability icon">
+                            <h5 class="card-title fw-bold mb-1 redspan">HTML</h5>
+                            <p class="container whitespan">For structuring and designing web pages</p>
+                        </div>
+        
+                        <div class="col-md-4 py-5">
+                            <img src="./assets/icons/about-me-css-icon.png" class="img-fluid mb-4" alt="availability icon">
+                            <h5 class="card-title fw-bold mb-1 redspan">CSS and SASS</h5>
+                            <p class="container whitespan">CSS and SASS for responsive design with flexbox and grid</p>
+                        </div>
+        
+                        <div class="col-md-4 py-5">
+                            <img src="./assets/icons/about-me-javascript-icon.png" class="img-fluid mb-4" alt="availability icon">
+                            <h5 class="card-title fw-bold mb-1 redspan">JAVASCRIPT</h5>
+                            <p class="container whitespan">For the creation of dynamic interfaces and DOM manipulating</p>
+                        </div>
+                        <div class="col-md-4 py-5">
+                            <img src="./assets/icons/about-me-bootstrap-icon.png" class="img-fluid mb-4" alt="availability icon">
+                            <h5 class="card-title fw-bold mb-1 redspan">BOOTSTRAP</h5>
+                            <p class="container whitespan">Framework for building responsive and mobile-first websites</p>
+                        </div>
+        
+                        <div class="col-md-4 py-5">
+                            <img src="./assets/icons/about-me-wordpress-icon.png" class="img-fluid mb-4" alt="availability icon">
+                            <h5 class="card-title fw-bold mb-1 redspan">WORDPRESS</h5>
+                            <p class="container whitespan">The most famouse and used CMS</p>
+                        </div>
+
+                        <div class="col-md-4 py-5">
+                            <img src="./assets/icons/about-me-sql-icon.png" class="img-fluid mb-4" alt="availability icon">
+                            <h5 class="card-title fw-bold mb-1 redspan">SQL</h5>
+                            <p class="container whitespan">For the database managment</p>
+                        </div>        
+                    </div>  
+                    <!--end Digital skills paragraph-->              
+                
+        
 
                 </div>
+                <!--end history and skills column-->
+
+                <!--Image column from About me section-->
+
+                <div class="col-md-4 text-center my-5 container-img-about-me">
+                    <!--QUI METTERò UNA FOTO DI ME AL LAVORO O PIU FOTO DELLA MIA VITA -->
+                    <img src="./assets/img/about-me-image.png" class="img-fluid rounded-circle" alt="Eduardo Rosso image about me ">
+     
+
+                </div>
+                <!--end Image column from About me section-->
+
             </div>
 
-            <h1 class=" greenspan fw-semibold my-3"><span class="bluespan">&lt;&gt;</span> DIGITAL SKILLS  <span class="bluespan">&lt;&gt;</span></h1>
-            <div class="row">
-                <div class="col-md-4">
-
-                </div>
-
-                <div class="col-md-4">
-
-                </div>
-
-                <div class="col-md-4">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-
-                </div>
-                <div class="col-md-4">
-                    
-                </div>
-            </div>
+          
 
 
 
