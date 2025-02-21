@@ -4,22 +4,253 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--Include via CDN Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
+
+<style>
+
+*{
+   font-family:  Consolas, 'Courier New', monospace;
+   
+}
+
+body {
+  background-color: #1E1E1E;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
+  background-repeat: repeat;
+  background-size: auto;
+  
+    /* Applica l'animazione */
+  animation: scrollBackground 10s linear infinite;
+}
+
+/*Animazione che permette allo sfondo di scorrere all'infinito verso sinistra*/
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200px 0;
+  }
+}
+
+.bluespan{
+    color:#9CDCFE;
+}
+
+.bluespan-light{
+    color:#0000FF;
+}
+
+.whitespan{
+    color:#D4D4D4;
+}
+
+.greenspan {
+    color:#6A9955;
+}
+
+.redspan{
+    color:#CE9178;
+}
+
+.redspan-light{
+    color:#A31515;
+}
+
+.navbar{
+    color: #6A9955;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #D4D4D4;
+    
+}
+
+.nav-link{
+    color:#6A9955;
+}
+
+.nav-item{
+    background-color: #1E1E1E;
+    border: 3px;
+    border-color: #6A9955;
+}
+
+
+.hero{
+    width: 100%;
+    
+    min-height: 100vh;
+    display: grid;
+    place-items: center; /* Centra sia orizzontalmente che verticalmente */
+    
+    
+
+}
+
+.hero-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+
+
+.hero-bio{
+    font-size: larger;
+}
+
+.row-bio-call-to-action{
+    
+    display: flex;
+    align-items: center;   
+
+}
+
+.btn-bio{
+    background-color: #1E1E1E;
+    border-color: #6A9955;
+    color: #6A9955;
+}
+
+
+/*Start main section*/
+
+.how-work{
+
+    background-color: #FFFFFF;
+    min-height: 20vh;
+   
+
+}
+
+.card-how-work{
+    background-color: #FFFFFF;
+    border: 1;
+    color: #333333;
+}
+
+
+</style>
+
+
 <body>
 
-<!--Start header section-->
+<!--Start header section that contain: navbar, hero section-->
 
 <header>
 
     <!--Start Navbar-->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid ">
+            <span class="whitespan fw-bolder display-5">ER</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./assets/img/navbar-toggle-menu.svg" alt="Toggler icon" height="30" >
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item text-white">
+                <a class="nav-link" aria-current="page" href="#">Get in touch!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./curriculum.html">Download my cv</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>      
     <!--End Navbar-->
 
-</header>d
+    <!--Start Hero Section-->
+
+    <div class="hero container-fluid pt-3">
+        <div class="row ">
+            <div class="col-md-4 text-center mb-3 ">
+                <img src="./assets/img/hero-photo.png" class="img-fluid rounded-circle w-50" alt="Eduardo Rosso immagine profilo">
+            </div>
+            <div class="hero-description col-md-8 text-start">
+                <h2 class="redspan mt-3" id="title-hero-section"><span class="bluespan">&lt;</span>HELLO WORLD, I'M EDUARDO<span class="bluespan">&gt;</span></h2>
+                <h1 class="display-3 whitespan"><span class="bluespan">&lt;&gt;</span>WEB DEVELOPER from Turin, Italy!</h1>
+               
+                <p class="whitespan">_______</p>
+
+                <div class="row hero-bio">
+                    <h3 class="whitespan"><span class="bluespan">&lt;</span>I can build web sites with a modern development language that are responsive, inclusive, high performing and more attractive.<span class="bluespan">&gt;</span></h3>
+                </div>
+                <div class="row row-bio-call-to-action text-center pt-5">
+                    <div class="col-md-4 mb-3 text-start ">
+                        <button type="button" class="btn btn-bio ">GET IN TOUCH!</button>
+                    </div>
+                    <div class="col-md-8 text-start ">
+                        <a href="#how-work"><span class="greenspan">Or see other about me!</span></a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+       
+    </div>
+    <!--End Hero Section-->
+
+  
+</header>
 <!--End header-->
 
-<!--Start main section-->
+<!--Start main section that contain: how work section, about me section, projects and works section, contacts section-->
 
 <main>
+
+
+    <!--Start How work section-->
+
+    <div class="container-fluid how-work " id="how-work">
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col-md-4 mb-3 mb-md-0 border-1 border-black">
+                  
+                    <img src="./assets/icons/how-work-icon-reliability.png" class="img-fluid mb-4" alt="reliability icon">
+                    <h5 class="card-title fw-bold mb-1 redspan-light">RELIABILITY</h5>
+                    <p class="container">You can count on me for accurate and timely results</p>
+                    
+                </div>
+
+                <div class="col-md-4 mb-3 mb-md-0">
+                                 
+                    <img src="./assets/icons/how-work-icon-fast.png" class="img-fluid mb-4" alt="fast icon">
+                    <h5 class="card-title fw-bold mb-1 redspan-light">SPEED</h5>
+                    <p class="container">Quick results without compromising quality</p>
+                                      
+                </div>
+                <div class="col-md-4">
+
+                    <img src="./assets/icons/how-work-icon-availability.png" class="img-fluid mb-4" alt="availability icon">
+                    <h5 class="card-title fw-bold mb-1 redspan-light">AVAILABILITY</h5>
+                    <p class="container">Always available to meet your needs</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End How work section-->
+    
+    <!--Start About me section-->
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <!--End About me section-->
 
 </main>
 <!--End main section-->
@@ -30,6 +261,11 @@
 
 </footer>
 <!--End footer section-->
+
+
+<!--Include via CDN Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
