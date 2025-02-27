@@ -1,0 +1,262 @@
+
+
+*{
+   font-family:  Consolas, 'Courier New', monospace;
+   
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1E1E1E;
+   
+}
+
+body a{
+    text-decoration: none;
+   
+}
+
+header{
+
+    background-color: #1E1E1E;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
+    background-repeat: repeat;
+    background-size: auto;
+    /* Applica l'animazione */
+    animation: scrollBackground 10s linear infinite;
+
+
+    /*Questo tipo di posizionamento ci permette di mantenere tutti gli index positivi
+    facendo funzionare quindi gli elementi del footer con posizionamento sticky*/
+    position: relative;
+    z-index: 2;
+    
+}
+
+main{
+
+    background-color: #1E1E1E;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
+    background-repeat: repeat;
+    background-size: auto;
+
+    /* Applica l'animazione */
+    animation: scrollBackground 10s linear infinite;
+
+    /*Questo tipo di posizionamento ci permette di mantenere tutti gli index positivi
+    facendo funzionare quindi gli elementi del footer con posizionamento sticky*/
+    position: relative;
+    z-index: 2;
+    
+
+}
+
+
+/*Animazione che permette allo sfondo di scorrere all'infinito verso sinistra*/
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200px 0;
+  }
+}
+
+.bluespan{
+    color:#9CDCFE;
+}
+
+.bluespan-light{
+    color:#0000FF;
+}
+
+.whitespan{
+    color:#D4D4D4;
+}
+
+.greenspan {
+    color:#6A9955;
+}
+
+.redspan{
+    color:#CE9178;
+}
+
+.redspan-light{
+    color:#A31515;
+}
+
+.navbar{
+    color: #6A9955;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #D4D4D4;
+    
+}
+
+.nav-link{
+    color:#6A9955;
+}
+
+.nav-item{
+    background-color: #1E1E1E;
+    border: 3px;
+    border-color: #6A9955;
+}
+
+
+.hero{
+    width: 100%;
+    
+    min-height: 100vh;
+    display: grid;
+    place-items: center; /* Centra sia orizzontalmente che verticalmente */
+   
+    
+    
+
+}
+
+.hero-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+
+
+.hero-bio{
+    font-size: larger;
+}
+
+.row-bio-call-to-action{
+    
+    display: flex;
+    align-items: center;   
+
+}
+
+.btn-bio{
+    background-color: #6A9955;
+
+    border-color: #1E1E1E;
+    color: #1E1E1E;
+}
+
+
+/*Start main section*/
+
+.how-work{
+
+    background-color:#D4D4D4;
+   
+    min-height: 20vh;
+    
+  
+   
+
+}
+
+.card-how-work{
+    background-color: #FFFFFF;
+    border: 1;
+    color: #333333;
+}
+
+/*start sbout me section*/
+
+.about-me-class{
+    border-bottom: 1px solid #D4D4D4;
+}
+.about-me-title{
+    font-size: medium;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+      .digital-skills-row{        
+        display:flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        
+      }
+    }
+
+
+.digital-skills-row div{
+   
+    background-color:#262626;
+
+}
+
+.digital-skills-row img{
+   
+   height: 120px;
+   width: 120px;
+
+}
+
+.container-img-about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-md-fluid{
+    /*z-index: -1;*/
+}
+
+footer{
+
+    background-color:#333333;    
+    color:#D4D4D4;
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position:fixed;
+    
+    z-index: 1;
+    
+
+        
+}
+
+
+footer h2{
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 72%;
+    max-width: 100%;
+  
+}
+
+footer h3{
+    
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 100%;
+    max-width: 100%;
+    
+}
+
+
+
+
+
+
+

@@ -9,9 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-tre-dotty-16.png">
-    <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-tre-dotty-32.png">
-    <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-tre-dotty-96.png">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/index.js"></script>
     
     <!--JSMAIL via CDN-->
     <script type="text/javascript"
@@ -29,243 +28,8 @@
 </head>
 
 <style>
-
-*{
-   font-family:  Consolas, 'Courier New', monospace;
-   
-}
-
-html{
-   scroll-behavior: smooth;
-}
-
-body {
-    background-color: #1E1E1E;
-}
-
-body a{
-    text-decoration: none;
-}
-
-header{
-
-    background-color: #1E1E1E;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
-    background-repeat: repeat;
-    background-size: auto;
-    /* Applica l'animazione */
-    animation: scrollBackground 10s linear infinite;
     
-}
-
-main{
-    background-color: #1E1E1E;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
-    background-repeat: repeat;
-    background-size: auto;
-    /* Applica l'animazione */
-    animation: scrollBackground 10s linear infinite;
-
-}
-
-
-/*Animazione che permette allo sfondo di scorrere all'infinito verso sinistra*/
-@keyframes scrollBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -200px 0;
-  }
-}
-
-.bluespan{
-    color:#9CDCFE;
-}
-
-.bluespan-light{
-    color:#0000FF;
-}
-
-.whitespan{
-    color:#D4D4D4;
-}
-
-.greenspan {
-    color:#6A9955;
-}
-
-.redspan{
-    color:#CE9178;
-}
-
-.redspan-light{
-    color:#A31515;
-}
-
-.navbar{
-    color: #6A9955;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    color: #D4D4D4;
-    
-}
-
-.nav-link{
-    color:#6A9955;
-}
-
-.nav-item{
-    background-color: #1E1E1E;
-    border: 3px;
-    border-color: #6A9955;
-}
-
-
-.hero{
-    width: 100%;
-    
-    min-height: 100vh;
-    display: grid;
-    place-items: center; /* Centra sia orizzontalmente che verticalmente */
-   
-    
-    
-
-}
-
-.hero-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-}
-
-
-
-.hero-bio{
-    font-size: larger;
-}
-
-.row-bio-call-to-action{
-    
-    display: flex;
-    align-items: center;   
-
-}
-
-.btn-bio{
-    background-color: #6A9955;
-
-    border-color: #1E1E1E;
-    color: #1E1E1E;
-}
-
-
-/*Start main section*/
-
-.how-work{
-
-    background-color:#D4D4D4;
-   
-    min-height: 20vh;
-    
-   
-
-}
-
-.card-how-work{
-    background-color: #FFFFFF;
-    border: 1;
-    color: #333333;
-}
-
-/*start sbout me section*/
-
-.about-me-class{
-    border-bottom: 1px solid #D4D4D4;
-}
-.about-me-title{
-    font-size: medium;
-}
-
-
-
-@media only screen and (max-width: 768px) {
-      .digital-skills-row{        
-        display:flex;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        
-      }
-    }
-
-
-.digital-skills-row div{
-   
-    background-color:#262626;
-
-}
-
-.digital-skills-row img{
-   
-   height: 120px;
-   width: 120px;
-
-}
-
-.container-img-about-me{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-md-fluid{
-    z-index: -1;
-}
-
-footer{
-
-    background-color:#333333;    
-    color:#D4D4D4;
-    
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    z-index: -10;
-        
-}
-
-
-footer h2{
-    letter-spacing: 0;
-    text-transform: uppercase;
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 72%;
-    max-width: 100%;
-  
-}
-
-footer h3{
-    
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 100%;
-    max-width: 100%;
-    
-}
-
-
 </style>
-
 
 <body>
 
@@ -326,8 +90,6 @@ footer h3{
 <!--Start main section that contain: how work section, about me section, projects and works section, contacts section-->
 
 <main>
-
-
     <!--Start How work section-->
 
     <div class="container-fluid how-work " id="how-work">
@@ -479,7 +241,7 @@ footer h3{
 
 <!--Start footer section-->
 <div id="getintouch"></div>
-<footer class="container-fluid w-100 flex-wrap position-sticky bottom-0 ">
+<footer class="container-fluid w-100 flex-wrap position-sticky bottom-0">
 
    
 
@@ -496,16 +258,27 @@ footer h3{
             <g fill="#d4d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z"></path></g></g>
         </svg>
 
+        <a href="#">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
             <g fill="#d4d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g>
         </svg>
-
+        </a>
        
 
     </div>
 
-    <button type="button" class="btn btn-lg w-50 btn-bio fw-semibold my-5">SEND AN EMAIL</button>
 
+    <form class=" container mt-5">
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control" id="message" rows="4" placeholder="Insert here your message..."></textarea>
+        </div>        
+        <button type="submit" onclick="sendMail()" class="btn btn-lg w-100 btn-bio fw-semibold">SEND AN EMAIL</button>
+    </form>
+    
+    
     <div class="container position-absolute bottom-0 d-flex justify-content-center p-3">
         <span class="whitespan">Eduardo Rosso</span>
     </div>
