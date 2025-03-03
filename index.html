@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!--Include via CDN Boostrap-->
+    <!--Includo via CDN Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!--Carico i miei file css, sass, js ecc.-->
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
     <script src="./assets/js/index.js"></script>
     
-    <!--JSMAIL via CDN-->
+    <!--Includo JSMAIL via CDN ed utilizzo la mia chiave pubblica per l'accesso al servizio-->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
@@ -24,16 +25,16 @@
         })();
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.0.27/lenis.min.js"></script>
+
+
     
 </head>
 
-<style>
-    
-</style>
 
 <body >
 
-<!--Inizio sezioStart header section that contain: navbar, hero section-->
+<!--Inizio sezione Header che contiene: navbar, sezione Hero-->
 
 <header>
 
@@ -48,7 +49,7 @@
     </nav>      
     <!--Fine Navbar-->
 
-    <!--Start Hero Section-->
+    <!--Inizio sezione Hero-->
 
     <div class="hero container-fluid pt-3 pb-5">
         <div class="row ">
@@ -66,7 +67,7 @@
                 <div class="row row-bio-call-to-action text-center">
                     <div class="col-md-6 mb-4">
                         <a href="#getintouch">
-                            <button type="button" class="btn btn-lg w-100 btn-bio">Dai vita al tuo progetto con me</button>
+                            <button type="button" class="btn button btn-lg w-100">Dai vita al tuo progetto con me</button>
                         </a>
                     </div>
                     <div class="col-md-6 text-center">
@@ -80,79 +81,86 @@
         </div>
        
     </div>
-    <!--End Hero Section-->
+    <!--Fine sezione Hero-->
 
   
 </header>
-<!--End header-->
+<!--Fine header-->
 
-<!--Start main section that contain: how work section, about me section, projects and works section, contacts section-->
+<!--Inizio sezione Main che contiene: sezione About, Digital skills, form di contatto -->
 
 <main>
-    <!--Start How work section-->
+    <!--Inizio sezione How Work-->
 
     <div class="container-fluid how-work " id="how-work">
         <div class="container py-5">
             <div class="row text-center">
                 <div class="col-md-4 mb-3 mb-md-0 border-1 border-black">
                   
-                    <img src="./assets/icons/how-work-icon-reliability.png" class="img-fluid mb-4" alt="reliability icon">
-                    <h5 class="card-title fw-bold mb-1 redspan-light">RELIABILITY</h5>
-                    <p class="container">You can count on me for accurate and timely results</p>
+                    <svg height="120px" width="120px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#1e1e1e" stroke="#1e1e1e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#1e1e1e;} </style> <g> 
+                        <path class="st0" d="M386.234,78.954l-49.861,49.861l4.635,4.814c-3.302,2.667-6.644,5.269-9.888,7.579 c-5.236,3.74-10.262,6.74-13.669,8.147c-0.22,0.098-1.146,0.358-2.984,0.35c-2.936,0.032-7.847-0.716-13.864-1.634 c-6.042-0.911-13.27-1.902-21.417-1.911c-7.108-0.024-14.946,0.838-23.199,3.106c-8.236-2.26-16.059-3.106-23.149-3.097 c-8.156,0-15.384,0.992-21.426,1.911c-6.017,0.918-10.92,1.667-13.855,1.634c-1.846,0.016-2.765-0.26-2.952-0.35 c-3.635-1.488-9.116-4.806-14.758-8.912c-2.919-2.122-5.895-4.448-8.847-6.838l4.627-4.798l-49.861-49.861L0,209.216l49.861,49.861 l14.595-15.116l32.216,28.117c0.902,5.391,2.602,10.481,4.562,15.312c1.276,3.074,2.675,6.033,4.107,8.814 c-3.115,5.156-4.814,11.043-4.798,17.011c-0.008,5.92,1.618,11.969,4.96,17.344c5.082,8.172,13.222,13.311,22.011,14.937 c0.05,5.814,1.66,11.742,4.936,17.011c6.221,10.002,16.987,15.547,27.964,15.53c0.423,0,0.854-0.065,1.276-0.081 c0.553,4.651,2.082,9.286,4.7,13.498c6.221,10.001,16.994,15.547,27.955,15.53c1.09,0,2.172-0.114,3.269-0.22 c0.52,4.188,1.911,8.367,4.261,12.14c5.668,9.108,15.474,14.165,25.45,14.141c5.383,0.008,10.896-1.456,15.791-4.497l14.946-9.301 c2.944,1.902,6.033,3.577,9.277,4.943c6.042,2.545,12.571,4.106,19.361,4.114c7.448,0.033,15.311-2.008,22.076-6.765 c4.407-3.073,8.139-7.286,11.196-12.253c0.472,0.016,0.854,0.098,1.342,0.106c3.098,0,6.497-0.464,9.864-1.513 c3.39-1.032,6.757-2.578,10.351-4.634c8.57-4.83,13.709-11.937,16.206-18.027c0.553-1.333,0.951-2.586,1.309-3.797 c2.074-0.658,4.058-1.464,5.854-2.504c6.627-3.814,10.945-9.611,13.604-15.433c2.667-5.88,3.838-11.986,3.854-17.856 c0-0.578-0.073-1.139-0.098-1.708c4.334-1.772,8.228-4.236,11.546-7.139c3.399-2.977,6.253-6.44,8.375-10.392 c2.115-3.935,3.53-8.44,3.538-13.375c0.008-3.212-0.651-6.595-2.09-9.766c-0.464-1.008-1.122-1.935-1.724-2.87 c2.53-4.53,5.106-9.635,7.22-15.148c1.586-4.172,2.92-8.546,3.684-13.141l33.59-29.313l15.742,16.303L512,209.216L386.234,78.954z M138.744,320.428l-0.578,0.366c-1.504,0.928-3.082,1.342-4.708,1.35c-3.017-0.016-5.912-1.488-7.611-4.228 c-0.927-1.504-1.35-3.09-1.35-4.7c0.016-3.033,1.48-5.912,4.212-7.611l19.751-12.27c1.504-0.935,3.082-1.341,4.691-1.358 c3.033,0.032,5.912,1.48,7.62,4.236l10.172-6.318l-10.172,6.326c0.927,1.496,1.341,3.073,1.35,4.684 c-0.017,2.114-0.773,4.131-2.138,5.757L143.02,317.2C141.476,318.159,140.069,319.273,138.744,320.428z M165.113,352.733 c-1.504,0.927-3.082,1.35-4.7,1.35c-3.025-0.016-5.919-1.48-7.619-4.22c-0.928-1.504-1.342-3.098-1.35-4.708 c0.007-2.097,0.764-4.114,2.122-5.724l16.97-10.562c1.537-0.952,2.928-2.057,4.253-3.212l0.618-0.374 c1.504-0.935,3.09-1.35,4.692-1.35c3.041,0.016,5.911,1.48,7.618,4.228c0.927,1.504,1.342,3.073,1.35,4.692 c-0.016,3.016-1.471,5.911-4.236,7.627L165.113,352.733z M218.771,369.419l-19.726,12.262c-1.496,0.928-3.074,1.35-4.7,1.35 c-3.017-0.016-5.912-1.48-7.611-4.22c-0.927-1.512-1.341-3.09-1.35-4.708c0.025-3.033,1.48-5.903,4.212-7.611l19.751-12.27 c1.504-0.935,3.082-1.341,4.691-1.341c3.033,0.007,5.912,1.471,7.62,4.22c0.926,1.505,1.341,3.082,1.35,4.7 C222.991,364.816,221.536,367.694,218.771,369.419z M249.353,389.421c0.625,1,0.894,2.041,0.902,3.13 c-0.016,2.025-0.984,3.952-2.846,5.115l-16.938,10.521c-1.008,0.634-2.049,0.902-3.147,0.902c-2.032-0.008-3.959-0.992-5.106-2.829 c-0.626-1.017-0.895-2.058-0.903-3.146c0.024-2.042,0.992-3.953,2.821-5.091h0.008l16.954-10.538 c1.033-0.642,2.066-0.911,3.147-0.911c2.041,0.016,3.952,0.984,5.098,2.83l10.18-6.31L249.353,389.421z M381.071,315.061 c-0.87,1.683-2.854,3.878-5.366,5.415c-2.513,1.554-5.432,2.464-8.229,2.456c-0.993,0-1.952,0.17-2.887,0.414 c-1.708-0.374-3.416-0.894-5.098-1.561c-5.212-2.033-10.082-5.326-13.522-8.107c-1.724-1.39-3.09-2.642-4.001-3.512l-1.008-1 l-0.22-0.228l-0.033-0.032H340.7c-3.351-3.643-9.026-3.887-12.677-0.537c-3.651,3.351-3.903,9.026-0.544,12.701 c0.3,0.309,4.814,5.236,12.205,10.311c3.708,2.537,8.139,5.123,13.237,7.123c1.179,0.464,2.407,0.894,3.668,1.285 c0.35,0.788,0.797,1.537,1.325,2.244l-0.024,0.017c0.065,0.048,0.553,1.594,0.512,3.578c0.058,3.309-1.146,7.643-2.878,10.033 c-0.845,1.22-1.707,1.992-2.544,2.472c-0.854,0.472-1.716,0.781-3.334,0.805l-0.578-0.008c-0.342-0.016-0.666,0.041-1,0.057 c-0.016,0-0.024,0-0.024,0c-7.79,0.033-15.042-3.309-20.393-6.968c-2.667-1.805-4.806-3.643-6.245-4.992 c-0.708-0.667-1.252-1.22-1.586-1.561l-0.349-0.374l-0.057-0.073h-0.008c-3.244-3.724-8.895-4.131-12.644-0.886 c-3.757,3.252-4.163,8.92-0.911,12.676l-0.008-0.007c0.35,0.39,4.497,5.17,11.71,10.082c4.748,3.211,10.944,6.537,18.303,8.456 c-0.081,0.212-0.13,0.423-0.228,0.635c-0.943,2.13-2.293,4.325-5.968,6.472c-2.481,1.416-4.253,2.155-5.497,2.529 c-1.252,0.374-1.951,0.448-2.846,0.455c-1.162,0.017-2.911-0.244-5.822-0.838c-0.528-0.113-1.056-0.146-1.585-0.178 c-0.196-0.082-0.382-0.155-0.594-0.261c-2.976-1.399-6.603-3.928-9.278-6.082c-1.342-1.065-2.48-2.041-3.261-2.732l-0.878-0.797 l-0.203-0.195l-0.041-0.032c-3.586-3.431-9.278-3.301-12.709,0.284c-3.423,3.586-3.293,9.278,0.293,12.701 c0.187,0.17,3.968,3.798,9.269,7.603c0.943,0.667,1.984,1.342,3.025,2.008c-1.464,2.334-2.992,3.936-4.488,5.001 c-2.391,1.643-4.993,2.423-8.343,2.44c-3,0.008-6.53-0.732-10.058-2.228c-1.171-0.488-2.317-1.179-3.472-1.821 c0.675-2.521,1.049-5.131,1.041-7.75c0.008-5.391-1.472-10.904-4.513-15.791c-5.163-8.302-13.774-13.181-22.792-13.978 c0-0.326,0.056-0.65,0.056-0.984c0.008-5.911-1.618-11.977-4.952-17.344v0.017c-6.228-10.034-17.011-15.58-27.972-15.556 c-0.422,0-0.854,0.073-1.276,0.09c-0.553-4.66-2.082-9.278-4.699-13.49h0.007c-5.082-8.188-13.229-13.326-22.019-14.937 c-0.056-5.814-1.658-11.742-4.936-17.011h0.008c-6.22-10.009-17.011-15.563-27.972-15.547c-5.928,0-11.969,1.627-17.344,4.96 l-11.538,7.172c-0.277-0.634-0.626-1.252-0.878-1.887c-2.008-4.805-3.269-9.546-3.407-12.814l-0.268-5.058l-38.598-33.695 l73.18-75.792c3.741,3.066,7.579,6.107,11.515,8.953c6.521,4.7,12.985,8.847,19.588,11.628c4.237,1.748,8.367,2.179,12.157,2.187 c6.066-0.024,11.627-1.065,17.425-1.911c0.374-0.065,0.764-0.097,1.146-0.155c-7.968,6.838-14.921,14.238-20.8,21.126 c-4.952,5.814-9.131,11.294-12.441,15.766c-3.268,4.448-5.789,8.034-6.895,9.449c-5.448,7.09-7.789,15.571-7.838,24.068 c0.024,7.904,2.122,16.132,7.57,23.085c2.716,3.439,6.326,6.448,10.635,8.497c4.302,2.065,9.229,3.122,14.36,3.122 c6.367-0.017,13.042-1.561,20.109-4.53c22.182-9.383,45.047-15.636,62.252-19.49c8.603-1.919,15.799-3.252,20.816-4.09 c0.944-0.155,1.732-0.285,2.513-0.414l75.271,64.888l0.032,0.016l0.025,0.041C381.73,313.378,381.615,314.053,381.071,315.061z M389.78,260.395l-0.261,5.058c-0.138,2.894-1.122,6.976-2.773,11.205c-0.838,2.211-1.862,4.44-2.935,6.634l-65.92-56.821 c-2.561-2.211-5.976-3.236-9.334-2.813c-0.585,0.114-48.934,6.18-97.047,26.46c-4.789,2.024-8.383,2.65-10.79,2.634 c-1.959,0-3.155-0.35-4.041-0.773c-1.285-0.626-2.204-1.513-3.114-3.212c-0.87-1.674-1.464-4.146-1.455-6.748 c-0.049-3.74,1.285-7.546,2.78-9.35c1.863-2.407,4.139-5.692,7.278-9.937c4.658-6.31,10.985-14.474,18.53-22.418 c7.529-7.944,16.287-15.636,25.467-21.036c12.417-7.293,22.996-9.123,33.022-9.156c6.171-0.008,12.09,0.764,17.864,1.634 c5.789,0.854,11.367,1.878,17.417,1.911c3.781-0.008,7.887-0.439,12.108-2.163l0.056-0.016c6.603-2.781,13.067-6.928,19.588-11.628 c3.912-2.83,7.766-5.887,11.49-8.944l72.035,74.604L389.78,260.395z"></path> </g> </g>
+                    </svg>                    
+                    <h3 class="card-title fw-bold mt-2 mb-1 redspan-light">AFFIDABILE</h3>
+                    <p class="container">Puoi contare su di me per risultati accurati</p>
                     
                 </div>
 
                 <div class="col-md-4 mb-3 mb-md-0">
                                  
-                    <img src="./assets/icons/how-work-icon-fast.png" class="img-fluid mb-4" alt="fast icon">
-                    <h5 class="card-title fw-bold mb-1 redspan-light">SPEED</h5>
-                    <p class="container">Quick results without compromising quality</p>
+                    <svg height="120px" width="120px" fill="#1e1e1e" viewBox="0 0 512 512" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" stroke="#1e1e1e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title>
+                        <path d="M256,62.24c-106.82,0-193.72,86.56-193.72,192.94s86.9,193,193.72,193,193.72-86.56,193.72-192.95S362.82,62.24,256,62.24Zm0,369.89c-98,0-177.72-79.38-177.72-176.95S158,78.24,256,78.24s177.72,79.38,177.72,176.94S354,432.13,256,432.13Zm127.58-103.6h0v0h0a8,8,0,0,1-10.9,2.91l-20-11.51a8,8,0,0,1,8-13.87l12.91,7.41A130.31,130.31,0,0,0,387,263.19H372.18a8,8,0,0,1,0-16H387a129.36,129.36,0,0,0-13.56-50.32l-12.87,7.4a7.91,7.91,0,0,1-4,1.07,8,8,0,0,1-4-14.94l12.8-7.35a131.91,131.91,0,0,0-37-36.83L321,159a8,8,0,0,1-13.84-8l7.39-12.75A130.71,130.71,0,0,0,264,124.73v14.76a8,8,0,0,1-16,0V124.73a130.71,130.71,0,0,0-50.56,13.5L204.83,151A8,8,0,1,1,191,159l-7.41-12.78a132,132,0,0,0-37,36.82l12.8,7.36a8,8,0,1,1-8,13.87l-12.88-7.4A129.36,129.36,0,0,0,125,247.18h14.86a8,8,0,0,1,0,16H125a130.31,130.31,0,0,0,13.53,50.33l12.9-7.41a8,8,0,1,1,8,13.87l-20,11.51a8,8,0,0,1-10.89-2.91h0l0,0h0a146.26,146.26,0,0,1-19.71-72.94c0-.14,0-.27,0-.41s0-.24,0-.36A145.42,145.42,0,0,1,128,182.59a7.54,7.54,0,0,1,.38-.75,7.25,7.25,0,0,1,.53-.79,148.09,148.09,0,0,1,52.63-52.42,7.52,7.52,0,0,1,.75-.5,8.52,8.52,0,0,1,.8-.4,146.86,146.86,0,0,1,72.51-19.25h.72a146.86,146.86,0,0,1,72.51,19.25,8.52,8.52,0,0,1,.8.4,7.52,7.52,0,0,1,.75.5,148,148,0,0,1,52.63,52.42,7.25,7.25,0,0,1,.53.79c.14.25.27.5.38.75a145.42,145.42,0,0,1,19.33,72.23c0,.12,0,.24,0,.37s0,.26,0,.4a146.26,146.26,0,0,1-19.7,72.92Zm-96.33-73.37a31.24,31.24,0,0,0-39.42-30l-27.56-47.54a8,8,0,1,0-13.84,8L234,233.15a31.09,31.09,0,0,0,22,53.14,31.5,31.5,0,0,0,8.15-1.08l5.28,9.12a8,8,0,0,0,13.84-8L278,277.22A31.13,31.13,0,0,0,287.25,255.16Zm-46.43,0a15.16,15.16,0,0,1,7.59-13.08h0a15.1,15.1,0,1,1-7.6,13.08Zm61.61,84.5H209.57a8,8,0,0,0-8,8v46.23a8,8,0,0,0,8,8h92.86a8,8,0,0,0,8-8V347.66A8,8,0,0,0,302.43,339.66Zm-8,46.23H217.57V355.66h76.86Z"></path></g>
+                    </svg>                    
+                    <h3 class="card-title fw-bold mt-2 mb-1 redspan-light">VELOCE</h3>
+                    <p class="container">Risultati veloci senza compromettere la qualità</p>
                                       
                 </div>
-                <div class="col-md-4">
 
-                    <img src="./assets/icons/how-work-icon-availability.png" class="img-fluid mb-4" alt="availability icon">
-                    <h5 class="card-title fw-bold mb-1 redspan-light">AVAILABILITY</h5>
-                    <p class="container">Always available to meet your needs</p>
+                <div class="col-md-4">
+                    <svg width="120px" height="120px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#1e1e1e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                        <path d="M3 9H21M7 3V5M17 3V5M11.9976 12.7119C11.2978 11.9328 10.1309 11.7232 9.25414 12.4367C8.37738 13.1501 8.25394 14.343 8.94247 15.1868C9.33119 15.6632 10.2548 16.4983 10.9854 17.1353C11.3319 17.4374 11.5051 17.5885 11.7147 17.6503C11.8934 17.703 12.1018 17.703 12.2805 17.6503C12.4901 17.5885 12.6633 17.4374 13.0098 17.1353C13.7404 16.4983 14.664 15.6632 15.0527 15.1868C15.7413 14.343 15.6329 13.1426 14.7411 12.4367C13.8492 11.7307 12.6974 11.9328 11.9976 12.7119ZM6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g>
+                    </svg>                    
+                    <h3 class="card-title fw-bold mt-2 mb-1 redspan-light">DISPONIBILE</h3>
+                    <p class="container">Sempre a tua disposizione quando ne hai bisogno</p>
 
                 </div>
             </div>
         </div>
     </div>
-    <!--End How work section-->
+    <!--Fine sezione How work-->
     
-    <!--Start About me section that contain: about me, digital skills-->
+    <!--Inizion sezione About che contiene: about me, digital skills-->
 
     <div class="about-me-class container-fluid" id="about-me">
         <div class="container py-5">
             <div class="row">
 
-                <!--History and skill digital comlumn -->
+                <!--Colonna che comprende la mia storia e le mie Digital skills -->
 
-                <div class="col-md-8">
-                    <h1 class="about-me-title greenspan mb-3"><span class="bluespan">&lt;&gt;</span> ABOUT ME <span class="bluespan">&lt;&gt;</span></h1>
-                    <h2 class="display-3 redspan"><span class="bluespan">&lt;</span>Hi there, i'm Eduardo Rosso!<span class="bluespan">&gt;</span></h2>
-                    <h3 class="display-6 whitespan mb-3"><span class="bluespan">&lt;</span>I'm a Italy Web developer student, and i currently live in Turin in italy<span class="bluespan">&gt;</span></h3>
+                <div class="col-md-9">
+                    <h3 class="about-me-title greenspan mb-4"><span class="bluespan">&lt;&gt;</span> ABOUT ME <span class="bluespan">&lt;&gt;</span></h3>
+                    <h2 class="whitespan">Ciao a tutti, mi chiamo Eduardo Rosso!</h2>
+                    <h2 class="redspan mb-4">Sono uno studente italiano di Sviluppo Web, e attualmente vivo a Torino, in Italia</h2>
 
-                    <article>
-                        <p class="whitespan"><span class="bluespan">&#123;</span>
-                        <br>
-                        I have been studying computer programming since I was 15. I chose this field of study after middle school because I was fascinated by the world of video games and the internet, and I wanted to understand what was behind
-                        a graphical interface to fully comprehend it. In fact, after finishing school, I enrolled in a computer science university course, but I dropped out shortly after because I wasn't very fond of mathematics and decided to 
-                        start working instead. I am a very curious person, and because of that, during my professional career, I also explored other fields and passions. However, by the age of 28, I found myself back on the path of computing 
-                        because, deep down, I had never truly left it behind.
+                    <article class="mb-5">
+                        <p class="whitespan">
+                            Ho studiato programmazione informatica sin dall'età di 15 anni. Ho scelto questo campo di studi dopo la scuola media 
+                            perché ero affascinato dal mondo dei videogiochi e di internet e volevo capire cosa ci fosse dietro un'interfaccia grafica 
+                            per comprenderla appieno. Infatti, dopo aver terminato la scuola, mi sono iscritto a un corso universitario di informatica, 
+                            ma ho abbandonato poco dopo perché la matematica non mi entusiasmava particolarmente e ho deciso di iniziare a lavorare. 
+                            Sono una persona molto curiosa e, per questo, durante la mia carriera professionale ho esplorato anche altri settori e passioni. 
+                            Tuttavia, all'età di 28 anni, mi sono ritrovato di nuovo sulla strada dell'informatica perché, in fondo, non l'avevo mai davvero abbandonata.
+                            <br>
+                            <br>
 
-                        <br>
-                        <span class="redspan">I always put a lot of passion into what I do and bring out the best in myself when it's needed.</span>
-
-                    
-                        <br>
-                        <span class="bluespan">&#125;</span></p>
+                            <span class="bluespan">Metto sempre molta passione in ciò che faccio e do il meglio di me quando è necessario.</span>
+                        
+                            <br>
+                        </p>
                     </article>
 
                     <!--Digital skills paragraph-->
 
-                    <h1 class=" greenspan my-4"><span class="bluespan">&lt;&gt;</span> DIGITAL SKILLS  <span class="bluespan">&lt;&gt;</span></h1>
+                    <h3 class=" greenspan mb-4"><span class="bluespan">&lt;&gt;</span> DIGITAL SKILLS  <span class="bluespan">&lt;&gt;</span></h3>
                                        
                     <div class="row digital-skills-row text-center">
 
@@ -161,8 +169,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120" height="120" viewBox="0 0 48 48">
                                 <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
                             </svg>                            
-                            <h5 class="card-title fw-bold mb-1 redspan">HTML</h5>
-                            <p class="container whitespan">For structuring and designing web pages</p>
+                            <h3 class="card-title fw-bold mb-1 redspan">HTML</h3>
+                            <p class="container whitespan">Per strutturare e disegnare pagine web</p>
                         </div>
                         
                         <!--SKILL 2-->
@@ -170,8 +178,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120" height="120" viewBox="0 0 48 48">
                                 <linearGradient id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1" x1="16.33" x2="32.293" y1="-2.748" y2="41.109" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)" d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z"></path><path fill="#35c1f1" d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z"></path><path fill="#fff" d="M33.1,13H24v4h4.9l-0.3,4H24v4h4.4l-0.3,4.5L24,30.9v4.2l7.9-2.6L32.6,21l0,0L33.1,13z"></path><path fill="#d6e0e9" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4	L19.8,27z"></path><path d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M34.164,12H33.1H24h-9.2h-1.078l0.081,1.075l0.3,4L14.172,18H15.1H24h3.822l-0.15,2H24h-4.6h-1.051 l0.052,1.05l0.2,4L18.649,26H15.8h-1.056l0.058,1.054l0.3,5.5l0.037,0.682l0.649,0.214l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6 l0.644-0.212l0.041-0.677l0.7-11.5l0.5-7.998L34.164,12L34.164,12z M20.761,26H24h3.331l-0.185,2.769L24,29.843l-3.128-1.068 l-0.073-1.815L20.761,26L20.761,26z" opacity=".05"></path><path d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M33.632,12.5H33.1H24h-9.2h-0.539l0.04,0.537l0.3,4l0.035,0.463H15.1H24h4.361l-0.225,3H24h-4.6h-0.526 l0.026,0.525l0.2,4l0.024,0.475H19.6H24h3.866l-0.242,3.634L24,30.372l-3.614-1.234L20.3,26.98L20.28,26.5H19.8h-4h-0.528 l0.029,0.527l0.3,5.5l0.019,0.341l0.324,0.107l7.9,2.6L24,35.626l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.5-7.999 L33.632,12.5L33.632,12.5z" opacity=".07"></path>
                             </svg>                            
-                            <h5 class="card-title fw-bold mb-1 redspan">CSS and SASS</h5>
-                            <p class="container whitespan">CSS and SASS for responsive design with flexbox and grid</p>
+                            <h3 class="card-title fw-bold mb-1 redspan">CSS and SASS</h3>
+                            <p class="container whitespan">CSS e SASS per design responsive con flexbox e grid</p>
                         </div>
         
                         <!--SKILL 3-->
@@ -179,8 +187,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120" height="120" viewBox="0 0 48 48">
                                 <path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
                             </svg>                           
-                            <h5 class="card-title fw-bold mb-1 redspan">JAVASCRIPT</h5>
-                            <p class="container whitespan">For the creation of dynamic interfaces and DOM manipulating</p>
+                            <h3 class="card-title fw-bold mb-1 redspan">JAVASCRIPT</h3>
+                            <p class="container whitespan">Per la creazione di interfacce dinamiche e manipolazione del DOM</p>
                         </div>
 
                         <!--SKILL 4-->
@@ -188,8 +196,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120" height="120" viewBox="0 0 48 48">
                                 <path fill="#7c4dff" d="M7.373,11.443C7.293,9.132,9.094,7,11.529,7h24.946c2.435,0,4.236,2.132,4.155,4.443	c-0.077,2.221,0.023,5.097,0.747,7.443c0.726,2.353,1.951,3.84,3.957,4.031v2.167c-2.006,0.191-3.23,1.678-3.957,4.031	c-0.724,2.345-0.824,5.222-0.747,7.443C40.71,38.868,38.909,41,36.475,41H11.529c-2.434,0-4.236-2.132-4.155-4.443	c0.077-2.221-0.023-5.097-0.747-7.443c-0.726-2.353-1.954-3.84-3.96-4.031v-2.167c2.006-0.191,3.233-1.678,3.96-4.031	C7.35,16.54,7.451,13.664,7.373,11.443z"></path><path fill="#fff" d="M27.073,23.464v-0.028c1.853-0.32,3.299-2.057,3.299-3.97c0-1.352-0.52-2.498-1.504-3.312	c-0.981-0.812-2.357-1.241-3.981-1.241H17.45V33.08h7.475c1.942,0,3.555-0.474,4.663-1.372c1.109-0.899,1.696-2.207,1.696-3.783	C31.283,25.544,29.593,23.756,27.073,23.464z M23.59,22.608h-3.181V17.29h3.784c2.076,0,3.219,0.911,3.219,2.565	C27.413,21.63,26.055,22.608,23.59,22.608z M20.409,24.834h3.759c2.716,0,4.092,0.981,4.092,2.916c0,1.932-1.357,2.953-3.925,2.953	h-3.926V24.834z"></path>
                             </svg>                            
-                            <h5 class="card-title fw-bold mb-1 redspan">BOOTSTRAP</h5>
-                            <p class="container whitespan">Framework for building responsive and mobile-first websites</p>
+                            <h3 class="card-title fw-bold mb-1 redspan">BOOTSTRAP</h3>
+                            <p class="container whitespan">Framework per la creazione di siti responsivi e sviluppo mobile-first facilitato</p>
                         </div>
         
                         <!--SKILL 5-->
@@ -197,15 +205,17 @@
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="120" height="120" viewBox="0 0 48 48">
                                 <path fill="#fff" d="M24 4.050000000000001A19.95 19.95 0 1 0 24 43.95A19.95 19.95 0 1 0 24 4.050000000000001Z"></path><path fill="#01579b" d="M8.001,24c0,6.336,3.68,11.806,9.018,14.4L9.385,17.488C8.498,19.479,8.001,21.676,8.001,24z M34.804,23.194c0-1.977-1.063-3.35-1.67-4.412c-0.813-1.329-1.576-2.437-1.576-3.752c0-1.465,1.471-2.84,3.041-2.84 c0.071,0,0.135,0.006,0.206,0.008C31.961,9.584,28.168,8,24.001,8c-5.389,0-10.153,2.666-13.052,6.749 c0.228,0.074,0.307,0.039,0.611,0.039c1.669,0,4.264-0.2,4.264-0.2c0.86-0.057,0.965,1.212,0.099,1.316c0,0-0.864,0.105-1.828,0.152 l5.931,17.778l3.5-10.501l-2.603-7.248c-0.861-0.046-1.679-0.152-1.679-0.152c-0.862-0.056-0.762-1.375,0.098-1.316 c0,0,2.648,0.2,4.217,0.2c1.675,0,4.264-0.2,4.264-0.2c0.861-0.057,0.965,1.212,0.104,1.316c0,0-0.87,0.105-1.832,0.152l5.891,17.61 l1.599-5.326C34.399,26.289,34.804,24.569,34.804,23.194z M24.281,25.396l-4.8,13.952c1.436,0.426,2.95,0.652,4.52,0.652 c1.861,0,3.649-0.324,5.316-0.907c-0.04-0.071-0.085-0.143-0.118-0.22L24.281,25.396z M38.043,16.318 c0.071,0.51,0.108,1.059,0.108,1.645c0,1.628-0.306,3.451-1.219,5.737l-4.885,14.135C36.805,35.063,40,29.902,40,24 C40,21.219,39.289,18.604,38.043,16.318z"></path><path fill="#01579b" d="M4,24c0,11.024,8.97,20,19.999,20C35.03,44,44,35.024,44,24S35.03,4,24,4S4,12.976,4,24z M5.995,24 c0-9.924,8.074-17.999,18.004-17.999S42.005,14.076,42.005,24S33.929,42.001,24,42.001C14.072,42.001,5.995,33.924,5.995,24z"></path>
                             </svg>                            
-                            <h5 class="card-title fw-bold mb-1 redspan">WORDPRESS</h5>
-                            <p class="container whitespan">The most famouse and used CMS</p>
+                            <h3 class="card-title fw-bold mb-1 redspan">WORDPRESS</h3>
+                            <p class="container whitespan">Il piu famoso ed utilizzato dei CMS</p>
                         </div>
                         
                         <!--SKILL 6-->
                         <div class="col-md-4 py-5">
-                            <img src="./assets/icons/about-me-sql-icon.png" class="img-fluid mb-4" alt="availability icon">
-                            <h5 class="card-title fw-bold mb-1 redspan">SQL</h5>
-                            <p class="container whitespan">For the database managment</p>
+                            <svg fill="#d4d4d4" xmlns="http://www.w3.org/2000/svg" width="120px" height="120px" viewBox="-60.31 -60.31 668.91 668.91"   stroke="#d4d4d4" stroke-width="0.0054829"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="15.35212"> <g> <g> 
+                                <path d="M276.043,244.216c-24.575,0-38.741,24.087-38.741,53.862c-0.241,30.228,14.407,53.382,38.5,53.382 c24.323,0,38.512-22.92,38.512-54.091C314.313,268.303,300.604,244.216,276.043,244.216z"></path> <path d="M486.2,196.116h-13.164V132.59c0-0.399-0.064-0.795-0.116-1.2c-0.021-2.52-0.824-4.997-2.551-6.96L364.656,3.677 c-0.031-0.031-0.064-0.044-0.085-0.075c-0.629-0.704-1.364-1.29-2.141-1.796c-0.231-0.154-0.462-0.283-0.704-0.419 c-0.672-0.365-1.386-0.672-2.121-0.893c-0.199-0.052-0.377-0.134-0.576-0.186C358.229,0.118,357.4,0,356.562,0H96.757 C84.893,0,75.256,9.649,75.256,21.502v174.613H62.093c-16.967,0-30.733,13.756-30.733,30.733v159.812 c0,16.961,13.766,30.731,30.733,30.731h13.163V526.79c0,11.854,9.637,21.501,21.501,21.501h354.777 c11.853,0,21.502-9.647,21.502-21.501V417.392H486.2c16.977,0,30.729-13.771,30.729-30.731V226.849 C516.93,209.872,503.177,196.116,486.2,196.116z M96.757,21.502h249.053v110.006c0,5.943,4.818,10.751,10.751,10.751h94.973 v53.861H96.757V21.502z M353.033,376.96l-10.394,27.884c-22.666-6.619-41.565-13.479-62.828-22.445 c-3.527-1.418-7.317-2.132-11.094-2.362c-35.909-2.352-69.449-28.819-69.449-80.778c0-47.711,30.236-83.623,77.71-83.623 c48.675,0,75.351,36.854,75.351,80.317c0,36.142-16.766,61.638-37.785,71.091v0.945 C326.828,371.528,340.519,374.367,353.033,376.96z M72.912,370.116l7.328-29.764c9.69,4.96,24.554,9.915,39.917,9.915 c16.525,0,25.271-6.84,25.271-17.228c0-9.928-7.56-15.597-26.691-22.442c-26.457-9.217-43.696-23.858-43.696-47.014 c0-27.163,22.68-47.948,60.231-47.948c17.954,0,31.184,3.791,40.623,8.03l-8.021,29.061c-6.375-3.076-17.711-7.564-33.3-7.564 c-15.599,0-23.163,7.079-23.163,15.357c0,10.15,8.977,14.646,29.533,22.447c28.108,10.394,41.332,25.023,41.332,47.464 c0,26.699-20.557,49.365-64.253,49.365C99.844,379.785,81.899,375.06,72.912,370.116z M451.534,520.962H96.757v-103.57h354.777 V520.962z M475.387,377.428h-99.455V218.231h36.158v128.97h63.297V377.428z"></path> </g> </g> </g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M276.043,244.216c-24.575,0-38.741,24.087-38.741,53.862c-0.241,30.228,14.407,53.382,38.5,53.382 c24.323,0,38.512-22.92,38.512-54.091C314.313,268.303,300.604,244.216,276.043,244.216z"></path> <path d="M486.2,196.116h-13.164V132.59c0-0.399-0.064-0.795-0.116-1.2c-0.021-2.52-0.824-4.997-2.551-6.96L364.656,3.677 c-0.031-0.031-0.064-0.044-0.085-0.075c-0.629-0.704-1.364-1.29-2.141-1.796c-0.231-0.154-0.462-0.283-0.704-0.419 c-0.672-0.365-1.386-0.672-2.121-0.893c-0.199-0.052-0.377-0.134-0.576-0.186C358.229,0.118,357.4,0,356.562,0H96.757 C84.893,0,75.256,9.649,75.256,21.502v174.613H62.093c-16.967,0-30.733,13.756-30.733,30.733v159.812 c0,16.961,13.766,30.731,30.733,30.731h13.163V526.79c0,11.854,9.637,21.501,21.501,21.501h354.777 c11.853,0,21.502-9.647,21.502-21.501V417.392H486.2c16.977,0,30.729-13.771,30.729-30.731V226.849 C516.93,209.872,503.177,196.116,486.2,196.116z M96.757,21.502h249.053v110.006c0,5.943,4.818,10.751,10.751,10.751h94.973 v53.861H96.757V21.502z M353.033,376.96l-10.394,27.884c-22.666-6.619-41.565-13.479-62.828-22.445 c-3.527-1.418-7.317-2.132-11.094-2.362c-35.909-2.352-69.449-28.819-69.449-80.778c0-47.711,30.236-83.623,77.71-83.623 c48.675,0,75.351,36.854,75.351,80.317c0,36.142-16.766,61.638-37.785,71.091v0.945 C326.828,371.528,340.519,374.367,353.033,376.96z M72.912,370.116l7.328-29.764c9.69,4.96,24.554,9.915,39.917,9.915 c16.525,0,25.271-6.84,25.271-17.228c0-9.928-7.56-15.597-26.691-22.442c-26.457-9.217-43.696-23.858-43.696-47.014 c0-27.163,22.68-47.948,60.231-47.948c17.954,0,31.184,3.791,40.623,8.03l-8.021,29.061c-6.375-3.076-17.711-7.564-33.3-7.564 c-15.599,0-23.163,7.079-23.163,15.357c0,10.15,8.977,14.646,29.533,22.447c28.108,10.394,41.332,25.023,41.332,47.464 c0,26.699-20.557,49.365-64.253,49.365C99.844,379.785,81.899,375.06,72.912,370.116z M451.534,520.962H96.757v-103.57h354.777 V520.962z M475.387,377.428h-99.455V218.231h36.158v128.97h63.297V377.428z"></path> </g> </g> </g>
+                            </svg> 
+                            <h3 class="card-title fw-bold mb-1 redspan">SQL</h3>                           
+                            <p class="container whitespan">Per la gestione dei database</p>
                         </div>        
                     </div>  
                     <!--end Digital skills paragraph-->              
@@ -217,7 +227,7 @@
 
                 <!--Image column from About me section-->
 
-                <div class="col-md-4 text-center my-5 container-img-about-me d-none d-md-block ">
+                <div class="col-md-3 text-center my-5 container-img-about-me d-none d-md-block ">
                     <!--this foto is display-none on mobile version -->
                     <img src="./assets/img/about-me-image.png" class="img-fluid  rounded-circle" alt="Eduardo Rosso image about me ">
      
@@ -228,36 +238,42 @@
             </div>
             <div class="row">
                 <div class="container text-center my-5">
-                    <button type="button" class="btn btn-lg w-50 btn-bio">SEE MY PERSONAL CV!</button>
+                    <a href="./curriculum.html" target="_blank" rel="noopener noreferrer">
+                        <button type="button" class="btn button btn-lg w-50">Guarda il mio cv personale!</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!--End About me section-->
+    <!--Fine sezione About me-->
 
 </main>
-<!--End main section-->
+<!--Fine sezione main-->
 
-<!--Start footer section-->
+<!--Inizio sezione footer-->
 <div id="getintouch"></div>
 <footer class="container-fluid w-100 flex-wrap position-sticky bottom-0">
 
    
 
-    <h3 class="">READY TO PUSH YOURE SITES TO THE NEXT LEVEL?</h3>
-    <h2 class="redspan">LET'S GET STARTED</h2>
+    <h3 class="">PRONTO PER PORTARE IL TUO SITO AL PROSSIMO LIVELLO?</h3>
+    <h2 class="redspan">INIZIAMO SUBITO</h2>
 
     <div class="d-flex justify-content-center gap-4 mt-5">
-        
+
+        <a href="https://github.com/EduardoRosso95" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
             <g fill="#d4d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z"></path></g></g>
         </svg>
+        </a>
 
+        <a href="https://www.linkedin.com/in/eduardo-rosso-3291081b7/" target="_blank" rel="noopener noreferrer">       
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
             <g fill="#d4d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z"></path></g></g>
         </svg>
+        </a>
 
-        <a href="#">
+        <a href="https://www.instagram.com/_eduardorosso_/" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
             <g fill="#d4d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g>
         </svg>
@@ -269,12 +285,12 @@
 
     <form class=" container mt-5">
         <div class="mb-3">
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" id="email" placeholder="nome@esempio.com" required>
         </div>
         <div class="mb-3">
-            <textarea class="form-control" id="message" rows="4" placeholder="Insert here your message..."></textarea>
+            <textarea class="form-control" id="message" rows="4" placeholder="Inserisci qui il messaggio della tua mail..." required></textarea>
         </div>        
-        <button type="submit" onclick="sendMail()" class="btn btn-lg w-100 btn-bio">SEND AN EMAIL</button>
+        <button type="submit" onclick="sendMail()" class="btn button btn-lg w-100">Invia la tua mail</button>
     </form>
     
     
@@ -285,9 +301,10 @@
 
     <!--contact form-->
     
-
+</footer>
 
 <!--End footer section-->
+
 
 
 <!--Include via CDN Bootstrap-->
