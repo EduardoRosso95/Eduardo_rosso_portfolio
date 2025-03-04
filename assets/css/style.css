@@ -1,11 +1,23 @@
 
-/*Programmazione stile mobile-first, eventuali modifiche per la versione desktop
+/*Animazione che permette allo sfondo di scorrere all'infinito verso sinistra*/
+@keyframes scrollBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200px 0;
+    }
+  }
+
+/*Programmazione stile mobile-first, eventuali modifiche per la versione tablet e/o desktop
 saranno inserite in seguito*/
+
+/*Inizio stile generico degli elementi html*/
+
 *{
     
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-variant: small-caps;
-    text-align: center;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.367);;
 
     
@@ -27,6 +39,74 @@ a{
    
 }
 
+h1{
+    letter-spacing: 0 !important;    
+    font-weight: 700 !important;
+    line-height: 90% !important;
+    max-width: 100% !important; 
+}
+
+h2{
+    letter-spacing: 0 !important;    
+    font-weight: 700 !important;
+    line-height: 90% !important;
+    max-width: 100% !important;
+}
+
+h3{
+    
+    letter-spacing: 0 !important;    
+    font-weight: 700 !important;
+    line-height: 90% !important;
+    max-width: 100% !important;
+}
+
+p{
+    letter-spacing: 0 !important;    
+    font-weight: 400 !important;
+    line-height: 95% !important;
+    max-width: 100% !important;
+    
+}
+
+/*Fine stile elementi Html*/
+
+
+
+
+
+/*Stile classi generiche*/
+.bluespan{
+    color:#9CDCFE;
+}
+
+
+.whitespan{
+    color:#D4D4D4;
+}
+
+.greenspan {
+    color:#6A9955;
+}
+
+.redspan{
+    color:#CE9178;
+}
+
+.redspan-light{
+    color:#A31515;
+}
+
+.button{
+    background-color: #6A9955;
+    border-color: #1E1E1E;
+    color: #1E1E1E;
+}
+/*Fine classi generiche*/
+
+
+/*Inizio stile header*/
+
 header{
 
     background-color: #1E1E1E;
@@ -46,76 +126,53 @@ header{
     
 }
 
-header h1{
-    letter-spacing: 0;    
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 95%;
-    max-width: 100%;
-  
+/*Inizio stile navbar*/
+
+.navbar{
+    color: #D4D4D4;
 }
 
-header h2{
-    letter-spacing: 0;    
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 95%;
-    max-width: 100%;
-  
+/*Inizio stile sezione hero*/
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 5%;
+
+    text-align: center;
+   
 }
 
-header h3{
+@media screen and (min-width: 992px) {
+    .hero{
+        min-height: 80vh;
+
+        text-align: start;
+    }
     
-    letter-spacing: 1.5px;
-    
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 95%;
-    max-width: 100%;
-    
+    .row-bio-call-to-action{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+        align-items: center;
+        
+    }
 }
 
 
-.about-me-class h1{
-    letter-spacing: 0;    
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 95%;
-    max-width: 100%;
-  
-}
-
-.about-me-class h2{
-    letter-spacing: 0;    
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 95%;
-    max-width: 100%;
-  
-}
-
-.about-me-class h3{
-    
-    letter-spacing: 1.5px;
-    
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 95%;
-    max-width: 100%;
-    
-}
-
-p{
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 95%;
-    max-width: 100%;
-}
 
 
+
+
+
+/*Inizio stile main*/
 
 main{
 
+    /*Creo lo sfondo*/
     background-color: #1E1E1E;
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
     background-repeat: repeat;
@@ -134,110 +191,11 @@ main{
 }
 
 
-/*Animazione che permette allo sfondo di scorrere all'infinito verso sinistra*/
-@keyframes scrollBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -200px 0;
-  }
-}
-
-.bluespan{
-    color:#9CDCFE;
-}
-
-.bluespan-light{
-    color:#0000FF;
-}
-
-.whitespan{
-    color:#D4D4D4;
-}
-
-.greenspan {
-    color:#6A9955;
-}
-
-.redspan{
-    color:#CE9178;
-}
-
-.redspan-light{
-    color:#A31515;
-}
-
-.navbar{
-    color: #6A9955;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    color: #D4D4D4;
-    
-}
-
-.nav-link{
-    color:#6A9955;
-}
-
-.nav-item{
-    background-color: #1E1E1E;
-    border: 3px;
-    border-color: #6A9955;
-}
-
-
-.hero{
-    width: 100%;
-    
-    min-height: 100vh;
-    display: grid;
-    place-items: center; /* Centra sia orizzontalmente che verticalmente */
-   
-    
-    
-
-}
-
-.hero-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-}
-
-
-
-.hero-bio{
-    font-size: larger;
-}
-
-.row-bio-call-to-action{
-    
-    display: flex;
-    align-items: center;   
-
-}
-
-
-
-.button{
-    background-color: #6A9955;
-    border-color: #1E1E1E;
-    color: #1E1E1E;
-}
-
-
 /*Start main section*/
+/*Inizio sezione how work*/
 
 .how-work{
-
     background-color:#D4D4D4;
-   
-    min-height: 20vh;
-    
-  
    
 
 }
@@ -248,16 +206,30 @@ main{
     color: #333333;
 }
 
-/*start sbout me section*/
+@media screen and (min-width: 992px) {
+    .how-work{
+        height: 20vh;
+    }
+    
+}
+
+
+/*Fine sezione how work*/
+
+/*Inizio stile sezione About me*/
 
 .about-me-class{
     border-bottom: 1px solid #D4D4D4;
+    min-height: 100vh;
 }
 .about-me-title{
     font-size: medium;
 }
 
+/*Inizio stile per le skills digitali*/
 
+
+/*Eccezione solo per la versione mobile*/
 
 @media only screen and (max-width: 768px) {
       .digital-skills-row{        
@@ -288,10 +260,9 @@ main{
     align-items: center;
 }
 
-.img-md-fluid{
-    /*z-index: -1;*/
-}
-
+/*Fine stile per le skills digitali*/
+/*Fine stile sezione About me*/
+/*Fine stile sezione Main*/
 
 /*Inizio stile del footer*/
 
@@ -334,6 +305,29 @@ footer h3{
     
 }
 
+.footer-social-icon{
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+    footer h2{
+        font-size: 8rem;
+    }
+
+    footer h3{
+        font-size: 3rem;
+    }
+    
+    .footer-social-icon{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .footer-form{
+        width: 50%;
+    }
+}
 /*Fine dello stile del footer*/
 
 
