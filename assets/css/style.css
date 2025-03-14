@@ -147,7 +147,7 @@ main {
 }
 @media screen and (min-width: 992px) {
   .how-work {
-    min-height: 20vh;
+    height: 20vh;
   }
 }
 
