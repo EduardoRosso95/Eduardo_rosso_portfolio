@@ -144,10 +144,14 @@ main {
 /*Inizio stile how-work*/
 .how-work {
   background-color: #D4D4D4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 @media screen and (min-width: 992px) {
   .how-work {
-    height: 20vh;
+    height: 20vh;    
   }
 }
 
