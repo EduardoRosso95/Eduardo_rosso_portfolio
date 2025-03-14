@@ -5,21 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <!--Includo via CDN Boostrap-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+ rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+ <!--Carico i miei file css, sass, js ecc.-->
+ <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+ <script src="./assets/js/index.js"></script>
+
+
 
 </head>
-<body>
+<body data-page="curriculum">
+
+    <!--Riprendo la navbar per permettermi di tornare eventualmente alla pagina principale-->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ">
+            <a href="./index.html">
+               <h2 class="whitespan">ER</h2> 
+            </a>
+        </div>
+    </nav> 
+
+    <!--Creo il mio curriculum-->
+
+    <div class="container">
+        <div class="row pb-2 border-bottom border-2">
+            <div class="col-lg-6 container-curriculum text-center border-0">
+                <img src="./assets/img/hero-photo2.png" class="img-fluid rounded-circle" alt="Foto Curriculum">
+            </div>
+            <div class="col-lg-6 container-curriculum border-0">
+                <h1 class="whitespan fw-bolder display-1">Eduardo<br>
+                    Rosso
+                </h1>
+                <h2 class="redspan">Student Full Stack Developer</h2>
+                <br>
+                <p class="whitespan">🎂 26 Novembre 1995</p>
+                <p class="whitespan">📍 Via Don Caustico - Grugliaco(TO)</p>
+                <p class="whitespan">📞 +39 346 3723111</p>
+                <p class="whitespan">✉️ eduardo.rossoo@gmail.com</p>                   
+            </div>
+        </div>
+
+        <div class="row py-2">
+            <div class="col-lg-6">
+                <div class="row py-2">
+                    <div class="col container-curriculum container-curriculum-light">
+                        <h3 class="redspan">Chi sono</h3>
+                        <p class="whitespan">
+                        Studente Full Stack Development alla ricerca di un'opportunità per applicare le competenze
+                        acquisite durante il master. Mi distinguo per affidabilità, curiosità e rapidità nell'apprendimento.
+                        Lavoro con focus e determinazione, apprezzando sia l'autonomia che il lavoro di squadra.
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col container-curriculum">
+                        <h3 class="redspan">Skills Digitali</h3>
+                        <ul class="whitespan">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>SQL, C, C#, VB</li>
+                            <li>Framework: Bootstrap</li>
+                            <li>CMS: WordPress</li>
+                            <li>Pacchetto Microsoft Office</li>
+                        </ul><br>
+                        <h3 class="redspan">Skills Personali</h3>
+                        <ul class="whitespan">
+                            <li>Buona capacità di problem solving</li>
+                            <li>Organizzazione e gestione progetti/personale</li>
+                            <li>TeamWork</li>
+                            <li>Disponibilità</li>
+                            <li>Aperto al feedback e pronto a migliorare</li>
+                        </ul><br>
+                        <h3 class="redspan">Certificazioni</h3>
+                        <p class="whitespan">
+                            <span class="fw-bolder fs-5 bluespan">C# & Database</span><br>
+                            Microsoft Technology Associate (MTA)
+                            Microsoft Technology Associate (MTA) 98-361 - Software Development Fundamentals             
+                        </p>
+                    </div>
+                </div>               
+            </div>
+            <div class="col-lg-6 ">
+                <div class="row py-2">
+                    <div class="col container-curriculum ">
+                    <h3 class="redspan">Istruzione e Formazione</h3>
+                    <p class="whitespan">
+                    <span class="fw-bolder fs-5 bluespan">Master in Full Stack Development</span><br><br>
+                    in corso | Start2Impact<br><br>
+                    Corso online dalla durata di circa 300 ore:<br>
+                    HTML e CSS - Sass - JavaScript - Typescript - Angular - PHP e Mysql - Wordpress<br><br>
+
+                    <a href="https://www.start2impact.it" target="_blank" rel="noopener noreferrer"><span class="fw-bolder fs-5 greenspan">https://www.start2impact.it</span></a><br><br>
+                    
+                    <span class="fw-bolder fs-5 bluespan">Diploma di Perito Informatico</span><br>
+                    2015 | Istituto Tecnico E. Majorana - Grugliasco
+                    </p>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col container-curriculum">
+                        <h3 class="redspan">Esperienze Lavorative</h3>
+                        <p class="whitespan">
+                        <span class="fw-bolder fs-6">(2015 -2018)</span><br>
+                        <span class="fw-bolder fs-5 bluespan">Sviluppo web e Manutentore di Rete</span><br>
+                        Ho sviluppato software interni utilizzando C, C# e VB.
+                        Mi sono occupato della creazione e gestione di siti web con WordPress, HTML, CSS e JavaScript.
+                        Inoltre, ho fornito supporto tecnico come help desk, gestendo la manutenzione di PC e server di rete.<br><br>
+
+                        <span class="fw-bolder fs-6 ">(2020 -2023)</span><br>
+                        <span class="fw-bolder fs-5 bluespan">Responsabile tecnico Impianti di sicurezza e TVCC</span><br>
+                        Responsabile dell'installazione e della manutenzione in loco di impianti elettronici 
+                        di sicurezza e sistemi TVCC.                                   
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col container-curriculum border-0">
+                        <h3 class="redspan">Lingue</h3>
+                        <p class="whitespan">
+                            <ul class="whitespan">
+                                <li>Italiano</li>
+                                <li>Inglese</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+   
 
 
-    <h1 class="display-1">Display 1</h1>
-<h1 class="display-2">Display 2</h1>
-<h1 class="display-3">Display 3</h1>
-<h1 class="display-4">Display 4</h1>
-<h1 class="display-5">Display 5</h1>
-<h1 class="display-6">Display 6</h1>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+
+<!--Include via CDN Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 

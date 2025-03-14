@@ -1,0 +1,206 @@
+/* Animazione sfondo infinito */
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200px 200px;
+  }
+}
+
+/* Stile Mobile-First */
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-variant: small-caps;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.367);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1E1E1E;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  letter-spacing: 0 !important;
+  font-weight: 700 !important;
+  line-height: 90% !important;
+  max-width: 100% !important;
+}
+
+p {
+  font-weight: 400 !important;
+  line-height: 95% !important;
+}
+
+/* Stile Classi Generiche */
+%text-color {
+  color: #D4D4D4;
+}
+
+.bluespan {
+  color: #9CDCFE;
+}
+
+.whitespan {@extend %text-color;}
+
+.greenspan {
+  color: #6A9955;
+}
+
+.redspan {
+  color: #CE9178;
+}
+
+.redspan-light {
+  color: #A31515;
+}
+
+.button {
+  background-color: #6A9955;
+  border-color: #1E1E1E;
+  color: #1E1E1E;
+}
+
+/* Stile Header */
+header {
+  background: #1E1E1E;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
+  background-repeat: repeat;
+  background-size: auto;
+  animation: scrollBackground 10s linear infinite;
+  position: relative;
+  z-index: 2;
+}
+
+/* Stile Navbar */
+.navbar {
+  @extend %text-color;
+}
+
+/* Stile Hero */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  text-align: center;
+
+  @media screen and (min-width: 992px) {
+    min-height: 80vh;
+    text-align: start;
+
+    .row-bio-call-to-action {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5%;
+      align-items: center;
+    }
+  }
+}
+
+/* Stile Main */
+main {
+  background: #1E1E1E;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
+  background-repeat: repeat;
+  background-size: auto;
+  animation: scrollBackground 10s linear infinite;
+  position: relative;
+  z-index: 3;
+}
+
+.how-work {
+  background-color: #D4D4D4;
+
+  @media screen and (min-width: 992px) {
+    height: 20vh;
+  }
+}
+
+.card-how-work {
+  background-color: #FFFFFF;
+  border: 1px solid #333;
+  color: #333;
+}
+
+/* Stile Footer */
+footer {
+  background-color: #333;
+  @extend %text-color;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+
+  h2 {
+    letter-spacing: 0;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 90%;
+    max-width: 100%;
+  }
+
+  h3 {
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    font-weight: 700;
+    max-width: 100%;
+  }
+
+  .footer-social-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    h2 {
+      font-size: 8rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    .footer-social-icon {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .footer-form {
+      width: 50%;
+    }
+  }
+}
+
+/* Stile Esclusivo Curriculum */
+body[data-page="curriculum"] {
+  .container-curriculum {
+    border-bottom: 2px solid #D4D4D4;
+    padding: 1rem;
+  }
+
+  .container-curriculum-light {
+    background-color: #262626;
+    @extend %text-color;
+  }
+
+  .container-curriculum {
+    p { font-size: 1.3rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
+    ul { font-size: 1.3rem; }
+  }
+}

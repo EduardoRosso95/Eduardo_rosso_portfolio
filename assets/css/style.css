@@ -5,7 +5,7 @@
       background-position: 0 0;
     }
     to {
-      background-position: -200px 0;
+      background-position: 200px 200px;
     }
   }
 
@@ -145,6 +145,8 @@ header{
     text-align: center;
    
 }
+
+/*Sezione hero in modalità schermo intero*/
 
 @media screen and (min-width: 992px) {
     .hero{
@@ -310,6 +312,7 @@ footer h3{
     height: 3rem;
 }
 
+/*Stile Footer in modalità schermo intero*/
 @media screen and (min-width: 992px) {
     footer h2{
         font-size: 8rem;
@@ -332,7 +335,37 @@ footer h3{
 
 
 
+/*Inizio stile Classi esclusive pagina curriculum.html*/
+
+body[data-page="curriculum"] .container-curriculum{
+
+    border-bottom: #D4D4D4 solid 2px;
+    padding:  1rem;
+
+}
+
+body[data-page="curriculum"] .container-curriculum-light{
+    background-color: #262626;
+    color: #D4D4D4;
+}
+
+body[data-page="curriculum"] .container-curriculum p{
+    font-size: 1.3rem;
+}
 
 
+body[data-page="curriculum"] .container-curriculum h2{
+    font-size: 2.5rem;
+}
+
+body[data-page="curriculum"] .container-curriculum h3{
+    font-size: 2rem;
+}
+
+body[data-page="curriculum"] .container-curriculum ul{
+    font-size: 1.3rem;
+}
+
+/*Fine stile classi curriculum.html*/
 
 
