@@ -1,371 +1,267 @@
-
-/*Animazione che permette allo sfondo di scorrere all'infinito verso sinistra*/
+@charset "UTF-8";
+/*dichiarazione variabili*/
+/* Animazione sfondo infinito */
 @keyframes scrollBackground {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 200px 200px;
-    }
+  from {
+    background-position: 0 0;
   }
-
-/*Programmazione stile mobile-first, eventuali modifiche per la versione tablet e/o desktop
-saranno inserite in seguito*/
-
-/*Inizio stile generico degli elementi html*/
-
-*{
-    
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-variant: small-caps;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.367);;
-
-    
+  to {
+    background-position: 200px 200px;
+  }
+}
+/*Fine animazione sfondo*/
+/* Inizio stile */
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-variant: small-caps;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.367);
 }
 
-
-html{
-   scroll-behavior: smooth;
-   
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #1E1E1E;  
-   
+  background-color: #1E1E1E;
 }
 
-a{
-    text-decoration: none;
-   
+/*Inizio Stile generico elementi della pagina*/
+a {
+  text-decoration: none;
+}
+a .link:hover {
+  color: #9CDCFE;
+}
+a .link:active {
+  color: #9CDCFE;
 }
 
-h1{
-    letter-spacing: 0 !important;    
-    font-weight: 700 !important;
-    line-height: 90% !important;
-    max-width: 100% !important; 
+h1, h2, h3, p {
+  letter-spacing: 0 !important;
+  font-weight: 700 !important;
+  line-height: 90% !important;
+  max-width: 100% !important;
 }
 
-h2{
-    letter-spacing: 0 !important;    
-    font-weight: 700 !important;
-    line-height: 90% !important;
-    max-width: 100% !important;
+p {
+  font-weight: 400 !important;
+  line-height: 95% !important;
 }
 
-h3{
-    
-    letter-spacing: 0 !important;    
-    font-weight: 700 !important;
-    line-height: 90% !important;
-    max-width: 100% !important;
+/*Fine Stile generico elementi della pagina*/
+/* Stile Classi Generiche */
+.bluespan {
+  color: #9CDCFE;
 }
 
-p{
-    letter-spacing: 0 !important;    
-    font-weight: 400 !important;
-    line-height: 95% !important;
-    max-width: 100% !important;
-    
-}
-
-/*Fine stile elementi Html*/
-
-
-
-
-
-/*Stile classi generiche*/
-.bluespan{
-    color:#9CDCFE;
-}
-
-
-.whitespan{
-    color:#D4D4D4;
+.whitespan {
+  color: #D4D4D4;
 }
 
 .greenspan {
-    color:#6A9955;
+  color: #6A9955;
 }
 
-.redspan{
-    color:#CE9178;
+.redspan {
+  color: #CE9178;
 }
 
-.redspan-light{
-    color:#A31515;
+.redspan-light {
+  color: #A31515;
 }
 
-.button{
-    background-color: #6A9955;
-    border-color: #1E1E1E;
-    color: #1E1E1E;
+.button {
+  background-color: #6A9955;
+  border-color: #1E1E1E;
+  color: #1E1E1E;
 }
-/*Fine classi generiche*/
-
-
-/*Inizio stile header*/
-
-header{
-
-    background-color: #1E1E1E;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
-    background-repeat: repeat;
-    background-size: auto;
-    /* Applica l'animazione */
-    animation: scrollBackground 10s linear infinite;
-
-    
-
-
-    /*Questo tipo di posizionamento ci permette di mantenere tutti gli index positivi
-    facendo funzionare quindi gli elementi del footer con posizionamento sticky*/
-    position: relative;
-    z-index: 2;
-    
+.button:hover {
+  background-color: #9CDCFE;
+  border-color: #333333;
+  color: #1E1E1E;
+}
+.button:active {
+  background-color: #9CDCFE;
+  border-color: #333333;
+  color: #1E1E1E;
 }
 
-/*Inizio stile navbar*/
-
-.navbar{
-    color: #D4D4D4;
+/* Fine stile Classi Generiche */
+/* Stile Header */
+header {
+  background: #1E1E1E;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
+  background-repeat: repeat;
+  background-size: auto;
+  animation: scrollBackground 10s linear infinite;
+  position: relative;
+  z-index: 2;
 }
 
-/*Inizio stile sezione hero*/
+/* Stile Navbar */
+.navbar {
+  color: #D4D4D4;
+}
 
-.hero{
-    width: 100%;
-    min-height: 100vh;
+/* Fine stile Navbar*/
+/* Stile Hero */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  text-align: center;
+  /*Stile Hero in modalità schermo intero*/
+}
+@media screen and (min-width: 992px) {
+  .hero {
+    min-height: 80vh;
+    text-align: start;
+  }
+  .hero .row-bio-call-to-action {
     display: flex;
-    align-items: center; 
-    justify-content: center;
-    padding: 5%;
-
-    text-align: center;
-   
+    justify-content: space-around;
+    margin-top: 5%;
+    align-items: center;
+  }
 }
 
-/*Sezione hero in modalità schermo intero*/
+/* Fine stile Hero*/
+/* Fine stile Header */
+/* Stile Main */
+main {
+  background: #1E1E1E;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
+  background-repeat: repeat;
+  background-size: auto;
+  animation: scrollBackground 10s linear infinite;
+  position: relative;
+  z-index: 3;
+}
 
+/*Inizio stile how-work*/
+.how-work {
+  background-color: #D4D4D4;
+}
 @media screen and (min-width: 992px) {
-    .hero{
-        min-height: 80vh;
-
-        text-align: start;
-    }
-    
-    .row-bio-call-to-action{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5%;
-        align-items: center;
-        
-    }
+  .how-work {
+    height: 20vh;
+  }
 }
 
-
-
-
-
-
-
-/*Inizio stile main*/
-
-main{
-
-    /*Creo lo sfondo*/
-    background-color: #1E1E1E;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="20" y="80" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text><text x="120" y="180" font-size="50" fill="%23262626" font-family="Arial" font-weight="bold">ER</text></svg>');
-    background-repeat: repeat;
-    background-size: auto;
-
-    /* Applica l'animazione */
-    animation: scrollBackground 10s linear infinite;
-
-    /*Questo tipo di posizionamento ci permette di mantenere tutti gli index positivi
-    facendo funzionare quindi gli elementi del footer con posizionamento sticky*/
-    position: relative;
-    z-index: 3;
-    
-
-    
+.card-how-work {
+  border: 1px solid #333333;
+  color: #333333;
 }
 
-
-/*Start main section*/
-/*Inizio sezione how work*/
-
-.how-work{
-    background-color:#D4D4D4;
-   
-
-}
-
-.card-how-work{
-    background-color: #FFFFFF;
-    border: 1;
-    color: #333333;
-}
-
-@media screen and (min-width: 992px) {
-    .how-work{
-        height: 20vh;
-    }
-    
-}
-
-
-/*Fine sezione how work*/
-
+/*Fine stile how-work*/
 /*Inizio stile sezione About me*/
-
-.about-me-class{
-    border-bottom: 1px solid #D4D4D4;
-    min-height: 100vh;
-}
-.about-me-title{
-    font-size: medium;
+.about-me-class {
+  border-bottom: 1px solid #D4D4D4;
+  min-height: 100vh;
 }
 
-/*Inizio stile per le skills digitali*/
-
-
-/*Eccezione solo per la versione mobile*/
-
-@media only screen and (max-width: 768px) {
-      .digital-skills-row{        
-        display:flex;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        
-      }
-    }
-
-
-.digital-skills-row div{
-   
-    background-color:#262626;
-
+.about-me-title {
+  font-size: medium;
 }
 
-.digital-skills-row img{
-   
-   height: 120px;
-   width: 120px;
-
+.container-img-about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container-img-about-me{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Fine stile per le skills digitali*/
 /*Fine stile sezione About me*/
-/*Fine stile sezione Main*/
-
-/*Inizio stile del footer*/
-
-footer{
-
-    background-color:#333333;    
-    color:#D4D4D4;
-    
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    position:fixed;
-    
-    z-index: 1;
-    
-
-        
+/*Inizio stile per le skills digitali*/
+/*Eccezione solo per la versione mobile*/
+@media only screen and (max-width: 768px) {
+  .digital-skills-row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+}
+/*Fine eccezione*/
+.digital-skills-row div {
+  background-color: #262626;
 }
 
-
-footer h2{
-    letter-spacing: 0;    
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 90%;
-    max-width: 100%;
-  
+.digital-skills-row img {
+  height: 120px;
+  width: 120px;
 }
 
-footer h3{
-    
-    letter-spacing: 1.5px;   
-    font-size: 1rem;
-    font-weight: 700;
-    max-width: 100%;
-    
+/*Fine stile per skill digitali*/
+/* Stile Footer */
+footer {
+  background-color: #333333;
+  color: #D4D4D4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
 }
-
-.footer-social-icon{
-    width: 3rem;
-    height: 3rem;
+footer h2 {
+  letter-spacing: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 90%;
+  max-width: 100%;
 }
-
-/*Stile Footer in modalità schermo intero*/
+footer h3 {
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  font-weight: 700;
+  max-width: 100%;
+}
+footer .footer-social-icon {
+  width: 3rem;
+  height: 3rem;
+}
 @media screen and (min-width: 992px) {
-    footer h2{
-        font-size: 8rem;
-    }
-
-    footer h3{
-        font-size: 3rem;
-    }
-    
-    .footer-social-icon{
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .footer-form{
-        width: 50%;
-    }
-}
-/*Fine dello stile del footer*/
-
-
-
-/*Inizio stile Classi esclusive pagina curriculum.html*/
-
-body[data-page="curriculum"] .container-curriculum{
-
-    border-bottom: #D4D4D4 solid 2px;
-    padding:  1rem;
-
+  footer h2 {
+    font-size: 8rem;
+  }
+  footer h3 {
+    font-size: 3rem;
+  }
+  footer .footer-social-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  footer .footer-form {
+    width: 50%;
+  }
 }
 
-body[data-page="curriculum"] .container-curriculum-light{
-    background-color: #262626;
-    color: #D4D4D4;
+/*Fine stile Footer*/
+/* Stile Esclusivo pagina Curriculum.html */
+body[data-page=curriculum] .container-curriculum {
+  border-bottom: 2px solid #D4D4D4;
+  padding: 1rem;
+}
+body[data-page=curriculum] .container-curriculum-light {
+  background-color: #262626;
+  color: #D4D4D4;
+}
+body[data-page=curriculum] .container-curriculum p {
+  font-size: 1.3rem;
+}
+body[data-page=curriculum] .container-curriculum h2 {
+  font-size: 2.5rem;
+}
+body[data-page=curriculum] .container-curriculum h3 {
+  font-size: 2rem;
+}
+body[data-page=curriculum] .container-curriculum ul {
+  font-size: 1.3rem;
 }
 
-body[data-page="curriculum"] .container-curriculum p{
-    font-size: 1.3rem;
-}
+/*Fine stile esclusivo pagina curriculum.html*/
 
-
-body[data-page="curriculum"] .container-curriculum h2{
-    font-size: 2.5rem;
-}
-
-body[data-page="curriculum"] .container-curriculum h3{
-    font-size: 2rem;
-}
-
-body[data-page="curriculum"] .container-curriculum ul{
-    font-size: 1.3rem;
-}
-
-/*Fine stile classi curriculum.html*/
-
-
+/*# sourceMappingURL=style.css.map */
