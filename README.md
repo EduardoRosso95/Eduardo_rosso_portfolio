@@ -1,6 +1,6 @@
 # Eduardo Rosso Portfolio
 
-<div style="text-align: center;">
+
 <b>Ciao!</b>
 
 Questo è il mio primo progetto di portfolio.
@@ -12,4 +12,3 @@ Per il servizio mail di contatto invece ho usato jsmail.
 Il sito racconta il mio percorso raccontando un po' di me, contiene il mio curriculum e, presto, includerà anche i miei progetti futuri.
 
 <b>Spero vi piaccia! :-)</b>
-</div>
