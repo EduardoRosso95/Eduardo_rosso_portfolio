@@ -14,6 +14,11 @@
 }
 /*Fine animazione sfondo*/
 /* Inizio stile */
+@media (orientation: landscape) {
+  body {
+    overflow: hidden;
+  }
+}
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-variant: small-caps;
@@ -125,7 +130,7 @@ header {
   text-align: center;
   /*Stile Hero in modalità schermo intero*/
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .hero {
     min-height: 80vh;
     text-align: start;
@@ -158,7 +163,7 @@ main {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .how-work {
     height: 20vh;
   }
