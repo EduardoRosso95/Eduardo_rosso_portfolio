@@ -12,7 +12,7 @@ Sto attualmente studiando con **start2impact** 📖
 
 Per il servizio mail di contatto invece ho usato jsmail, un servizio gratuito che consente di inviare mail lato client senza bisogno di un backend.
 
-Il sito racconta il mio percorso raccontando un po' di me, contiene il mio curriculum e, presto, includerà anche i miei progetti futuri.</p></br>
+Il sito parla del mio percorso raccontando un po' di me, contiene il mio curriculum e, presto, includerà anche i miei progetti futuri.</p></br>
 
 <h3 align="center">Spero vi piaccia! :-)</h3> </br></br>
 
