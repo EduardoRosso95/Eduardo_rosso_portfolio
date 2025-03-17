@@ -13,8 +13,13 @@ Sto attualmente studiando con **start2impact** 📖
 Per il servizio mail di contatto invece ho usato jsmail, un servizio gratuito che consente di inviare mail lato client senza bisogno di un backend.
 
 Il sito parla del mio percorso raccontando un po' di me, contiene il mio curriculum e, presto, includerà anche i miei progetti futuri.</p></br>
+https://eduardorosso95.github.io/Eduardo_rosso_portfolio/
+</br></br>
+
 
 <h3 align="center">Spero vi piaccia! :-)</h3> </br></br>
+
+
 
 
 <p align="center"> <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=eduardorosso95&show_icons=true&locale=en&layout=compact&theme=dark&langs_count=6" alt="eduardorosso95" /></p>
