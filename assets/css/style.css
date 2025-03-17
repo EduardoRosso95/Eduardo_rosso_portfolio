@@ -1,5 +1,8 @@
 @charset "UTF-8";
-/*dichiarazione variabili*/
+/*dichiarazione variabili - sass*/
+/*Palette di colori utilizzata nel sito - sass*/
+/*Stile del cursore -sass*/
+/*Fine dichiarazioni variabili*/
 /* Animazione sfondo infinito */
 @keyframes scrollBackground {
   from {
@@ -23,11 +26,13 @@ html {
 
 body {
   background-color: #1E1E1E;
+  cursor: url("../img/cursor-default.png"), auto;
 }
 
 /*Inizio Stile generico elementi della pagina*/
 a {
   text-decoration: none;
+  cursor: url("../img/cursor-pointer.png"), auto;
 }
 a .link:hover {
   color: #9CDCFE;
@@ -79,11 +84,16 @@ p {
   background-color: #9CDCFE;
   border-color: #333333;
   color: #1E1E1E;
+  cursor: url("../img/cursor-pointer.png"), auto;
 }
 .button:active {
   background-color: #9CDCFE;
   border-color: #333333;
   color: #1E1E1E;
+}
+
+.text-element:hover {
+  cursor: url("../img/cursor-text.png"), auto;
 }
 
 /* Fine stile Classi Generiche */
@@ -147,11 +157,10 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 @media screen and (min-width: 992px) {
   .how-work {
-    height: 20vh;    
+    height: 20vh;
   }
 }
 
@@ -182,6 +191,7 @@ main {
 /*Eccezione solo per la versione mobile*/
 @media only screen and (max-width: 768px) {
   .digital-skills-row {
+    display: flex;
     overflow-x: auto;
     flex-wrap: nowrap;
   }

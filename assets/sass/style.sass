@@ -1,14 +1,21 @@
-/*dichiarazione variabili*/
+/*dichiarazione variabili - sass*/
 
+/*Palette di colori utilizzata nel sito - sass*/
 $blue: #9CDCFE
 $white: #D4D4D4
 $green: #6A9955
-$red: #CE9178
+$red: #CE9178 
 $red-light: #A31515
 $black: #1E1E1E
 $grey-dark: #262626
 $grey: #333333
 
+/*Stile del cursore -sass*/
+$cursor-default: url('../img/cursor-default.png')
+$cursor-pointer: url('../img/cursor-pointer.png')
+$cursor-text: url('../img/cursor-text.png')
+
+/*Fine dichiarazioni variabili*/
         
 /* Animazione sfondo infinito */
 @keyframes scrollBackground 
@@ -28,12 +35,15 @@ $grey: #333333
 html 
   scroll-behavior: smooth
 
+
 body 
   background-color: $black
+  cursor: $cursor-default, auto
 
 /*Inizio Stile generico elementi della pagina*/
 a 
   text-decoration: none
+  cursor: $cursor-pointer, auto
   .link
     &:hover
       color: $blue
@@ -70,15 +80,21 @@ p
 .button 
   background-color: $green
   border-color: $black
-  color: $black
+  color: $black  
   &:hover
     background-color: $blue
     border-color: $grey
     color: $black
+    cursor: $cursor-pointer, auto
   &:active
     background-color: $blue
     border-color: $grey
     color: $black
+
+.text-element
+  &:hover
+    cursor: $cursor-text, auto
+  
 /* Fine stile Classi Generiche */
 
 
@@ -167,7 +183,7 @@ main
 /*Eccezione solo per la versione mobile*/
 @media only screen and (max-width: 768px) 
     .digital-skills-row      
-        display:flex
+        display: flex
         overflow-x: auto
         flex-wrap: nowrap
 /*Fine eccezione*/
