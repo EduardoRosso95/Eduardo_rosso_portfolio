@@ -10,7 +10,7 @@ Sto attualmente studiando con **start2impact** 📖
 
 <p align="left">Il portfolio è stato realizzato interamente con html <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="25" height="25"/> e css <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="25" height="25"/>, arricchito con l'utilizzo di framework come bootstrap <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="25" height="25"/> , e estensioni del linguaggio css come sass <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="25" height="25"/>.
 
-Per il servizio mail di contatto invece ho usato jsmail.
+Per il servizio mail di contatto invece ho usato jsmail, un servizio gratuito che consente di inviare mail lato client senza bisogno di un backend.
 
 Il sito racconta il mio percorso raccontando un po' di me, contiene il mio curriculum e, presto, includerà anche i miei progetti futuri.</p></br>
 
