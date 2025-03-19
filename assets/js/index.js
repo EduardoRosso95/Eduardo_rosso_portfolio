@@ -15,7 +15,8 @@ function sendMail(){
 
         emailjs.send("service_3bk0j9n", "template_719ywsw", parms).then(alert("Email mandata correttamente!")); 
         
-        messageField.value = '';
+        emailField.value= "";
+        messageField.value = "";
 
     }
 };
