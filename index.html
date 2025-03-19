@@ -319,7 +319,7 @@
     </div>
 
 
-    <form class="footer-form container mt-5 ">
+    <form class="footer-form container mt-5">
         <div class="mb-3">
             <input type="email" class="form-control text-center text-element" id="email" placeholder="nome@esempio.com" required>
         </div>
@@ -327,7 +327,7 @@
             <textarea class="form-control text-center text-element" id="message" rows="4" placeholder="Inserisci qui il messaggio della tua mail..." required></textarea>
         </div>
               
-        <button type="submit" onclick="sendMail()" class="btn button btn-lg mt-5">Invia la tua mail</button> 
+        <button type="submit"  onclick="sendMail(), spostaFocus()" id="btnsubmit" tabindex="0" class="btn button btn-lg mt-5">Invia la tua mail</button> 
     </form>
     
     
